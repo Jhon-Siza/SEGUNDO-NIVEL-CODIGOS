@@ -115,3 +115,6 @@ Complementación de la Unidad 4:
 - Principios SOLID
 - Arquitectura MVC
 - Pruebas del sistema
+
+Actualización Unidad 4:
+Implementación de MVC, SOLID, manejo de archivos CSV y pruebas.
