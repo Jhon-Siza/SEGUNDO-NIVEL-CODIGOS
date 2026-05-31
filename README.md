@@ -1,18 +1,117 @@
-# SEGUNDO-NIVEL-CODIGOS
-Sistema de Gestión Audiovisual - UPS
-Propósito
-Este proyecto académico implementa un sistema de gestión para diversos tipos de contenido multimedia (Películas, Series, TikToks, etc.) aplicando los pilares de la Programación Orientada a Objetos.
+# Sistema de Gestión de Contenidos Audiovisuales
 
-Funcionalidades
-Gestión de Contenidos: Creación de objetos con atributos específicos y compartidos.
+## Descripción
 
-Polimorfismo: Ejecución de una lista de contenidos mediante el método mostrarDetalles().
+Proyecto desarrollado para la asignatura de Programación Orientada a Objetos.
 
-Relaciones: Implementación de Agregación (Actor), Composición (Temporada) y Asociación (Investigador).
+El sistema permite administrar diferentes tipos de contenidos audiovisuales mediante el uso de herencia, polimorfismo y buenas prácticas de desarrollo de software.
 
-Instrucciones de Ejecución
-Clonar el repositorio: git clone [URL de tu repo].
+Durante la complementación del proyecto se implementaron mecanismos de persistencia de datos, refactorización del código, principios SOLID, arquitectura MVC y pruebas de funcionamiento.
 
-Abrir en NetBeans como un proyecto Maven.
+## Funcionalidades
 
-Ejecutar el archivo PruebaAudiovisual.java para ver los resultados en consola.
+- Gestión de películas.
+- Gestión de series de televisión.
+- Gestión de documentales.
+- Gestión de podcasts.
+- Gestión de videos TikTok.
+- Uso de herencia y polimorfismo.
+- Almacenamiento de datos en archivos CSV.
+- Arquitectura MVC (Modelo-Vista-Controlador).
+- Aplicación de principios SOLID.
+- Pruebas de funcionamiento del sistema.
+
+## Estructura del Proyecto
+
+### Modelo
+
+Paquete:
+
+```
+uni1a
+```
+
+Clases principales:
+
+- ContenidoAudiovisual
+- Pelicula
+- SerieDeTV
+- Documental
+- Podcast
+- VideoTiktok
+- Actor
+- Investigador
+- Temporada
+- ArchivoManager
+
+### Vista
+
+Paquete:
+
+```
+vista
+```
+
+Clase:
+
+- AudiovisualView
+
+### Controlador
+
+Paquete:
+
+```
+controlador
+```
+
+Clase:
+
+- AudiovisualController
+
+## Manejo de Archivos
+
+Se implementó la clase:
+
+- ArchivoManager
+
+La cual genera el archivo:
+
+```
+contenidos.csv
+```
+
+para almacenar información de los contenidos audiovisuales registrados.
+
+## Pruebas
+
+Se desarrollaron pruebas para validar el funcionamiento del sistema:
+
+- ActorTest
+- PeliculaTest
+
+Resultados obtenidos:
+
+```
+TEST ACTOR: CORRECTO
+TEST PELICULA: CORRECTO
+```
+
+## Tecnologías Utilizadas
+
+- Java
+- Apache NetBeans
+- GitHub
+- Programación Orientada a Objetos
+
+## Autor
+
+Jhon Siza
+
+## Repositorio
+
+Complementación de la Unidad 4:
+- Manejo de archivos CSV
+- Refactorización
+- Principios SOLID
+- Arquitectura MVC
+- Pruebas del sistema
